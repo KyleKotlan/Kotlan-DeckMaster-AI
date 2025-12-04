@@ -1,0 +1,5 @@
+{
+  "name": "Kotlan DeckMaster AI Planner",
+  "description": "An intelligent construction assistant that calculates detailed deck material lists and visualizes layouts based on your dimensions using Google Gemini.",
+  "requestFramePermissions": []
+}
