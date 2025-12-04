@@ -3,6 +3,7 @@ export interface DeckDimensions {
   width: number; // in feet
   height: number; // in inches
   material: DeckMaterial;
+  additionalDetails?: string;
 }
 
 export enum DeckMaterial {

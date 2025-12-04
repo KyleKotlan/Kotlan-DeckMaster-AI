@@ -15,6 +15,7 @@ export const generateMaterialList = async (dimensions: DeckDimensions): Promise<
     - Height off ground: ${dimensions.height} inches.
     - Deck Surface Material: ${dimensions.material}.
     - Structure: Standard residential framing (16" o.c. joists, appropriate beams and posts based on load).
+    ${dimensions.additionalDetails ? `- SPECIAL INSTRUCTIONS/USER NOTES: "${dimensions.additionalDetails}" (Please incorporate these requirements into the material list calculations).` : ''}
     
     CRITICAL CONSTRAINTS:
     1. BEAMS: Do NOT use built-up 2x lumber (e.g., (2) 2x10) for beams. Use solid timber (4x or larger, e.g., 4x8, 4x10, 6x10) or appropriate engineered beams.

@@ -38,7 +38,7 @@ const App: React.FC = () => {
                 <LayoutDashboard className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-slate-900 tracking-tight">DeckMaster <span className="text-blue-600">AI</span></h1>
+                <h1 className="text-xl font-bold text-slate-900 tracking-tight">Kyle Kotlan's DeckMaster <span className="text-blue-600">AI</span></h1>
                 <p className="text-[10px] text-slate-500 font-medium uppercase tracking-wider leading-none">Smart Project Planner</p>
               </div>
             </div>
@@ -94,7 +94,7 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 py-8 mt-auto">
         <div className="container mx-auto px-4 text-center text-slate-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} DeckMaster AI. Powered by Google Gemini.</p>
+          <p>&copy; {new Date().getFullYear()} Kyle Kotlan's DeckMaster AI. Powered by Google Gemini.</p>
         </div>
       </footer>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DeckDimensions, DeckMaterial } from '../types';
 import { MATERIAL_OPTIONS } from '../constants';
-import { Ruler, ArrowUpFromLine, Trees } from 'lucide-react';
+import { Ruler, ArrowUpFromLine, Trees, MessageSquarePlus } from 'lucide-react';
 
 interface InputFormProps {
   dimensions: DeckDimensions;
@@ -120,7 +120,20 @@ const InputForm: React.FC<InputFormProps> = ({ dimensions, onChange, onSubmit, i
         </div>
       </div>
 
-      <div className="pt-6">
+      <div className="space-y-2 pt-4 border-t border-slate-50">
+        <label className="block text-sm font-medium text-slate-700 flex items-center gap-2">
+          <MessageSquarePlus className="w-4 h-4 text-slate-400" />
+          Additional Details (Optional)
+        </label>
+        <textarea
+          value={dimensions.additionalDetails || ''}
+          onChange={(e) => handleChange('additionalDetails', e.target.value)}
+          placeholder="e.g., I want a wrap-around staircase, a spot for a hot tub, or picture frame border."
+          className="w-full pl-3 pr-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all min-h-[80px]"
+        />
+      </div>
+
+      <div className="pt-4">
         <button
           onClick={onSubmit}
           disabled={isLoading}

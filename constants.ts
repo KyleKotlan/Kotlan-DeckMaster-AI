@@ -4,7 +4,8 @@ export const DEFAULT_DIMENSIONS = {
   length: 12,
   width: 10,
   height: 24,
-  material: DeckMaterial.PRESSURE_TREATED
+  material: DeckMaterial.PRESSURE_TREATED,
+  additionalDetails: ''
 };
 
 export const MATERIAL_OPTIONS = [
